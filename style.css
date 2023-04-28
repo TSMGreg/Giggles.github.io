@@ -1,0 +1,41 @@
+
+body {
+    background-color: black;
+}
+.screen {
+    top: 200px;
+    z-index: 2;
+    background-image: url(https://cdn.discordapp.com/attachments/963359944424423505/1101411966486065212/image.png);
+    background-size: 100%;
+    overflow: hidden;
+    margin: 180px auto;
+    width: 500px;
+    border: 3px solid white;
+    aspect-ratio: 10 / 10;
+    border-radius: 5%;
+}
+/*
+.overlay {
+    background-size: 100% 10px;
+    opacity: 10%;
+   background: inear-gradient(165deg, white, white 5px, black 5px, black 10px);
+}
+*/
+.overlay {
+    height: 100%;
+    width: 100%;
+    background-image: url(https://i.postimg.cc/tJhBVh4d/scanlines.png);
+    animation: MoveUpDown 30s linear infinite;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+  
+  @keyframes MoveUpDown {
+    0%, 100% {
+      bottom: 0;
+    }
+    50% {
+      bottom: 100px;
+    }
+  }
