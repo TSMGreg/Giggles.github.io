@@ -4,6 +4,7 @@ body {
   background: rgb(0,0,0);
 }
 h2 {
+  font-family: 'Noto Sans Mono', monospace;
   position: relative;
   color: lightblue;
   text-shadow: 0 0 1em currentColor;
