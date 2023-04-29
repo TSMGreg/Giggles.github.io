@@ -1,17 +1,27 @@
 
 body {
-    background-color: black;
+  z-index: 3;
+  background: rgb(0,0,0);
+}
+h2 {
+  position: relative;
+  color: lightblue;
+  text-shadow: 0 0 1em currentColor;
+  text-align: center;
+  top: 250px;
+  right: 100px;
 }
 .screen {
+  z-index: 2;
     top: 200px;
     z-index: 2;
     background-image: url(https://cdn.discordapp.com/attachments/963359944424423505/1101446277864108102/Screenshot_20230407_121752_TikTok.jpg);
     background-size: 100%;
     overflow: hidden;
-    margin: 180px auto;
+    margin: 15vw auto;
     width: 500px;
     border: 3px solid white;
-    aspect-ratio: 10 / 10;
+    aspect-ratio: 9 / 9;
     border-radius: 5%;
 }
 /*
@@ -22,6 +32,7 @@ body {
 }
 */
 .overlay {
+  z-index: 1;
     height: 100%;
     width: 100%;
     background-image: url(https://i.postimg.cc/tJhBVh4d/scanlines.png);
